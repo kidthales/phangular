@@ -1,3 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  hmr: false,
+  title: 'Phangular',
+  version: require('../../package.json').version
 };
