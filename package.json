@@ -4,13 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod --base-href \"/phangular/\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "hmr": "ng serve --hmr --configuration=hmr",
     "get-phaser-typings": "curl -o src/phaser.d.ts https://raw.githubusercontent.com/photonstorm/phaser3-docs/master/typescript/phaser.d.ts",
-    "postinstall": "npm run get-phaser-typings"
+    "postinstall": "npm run get-phaser-typings",
+    "angular-cli-ghpages": "angular-cli-ghpages",
+    "deploy": "npm run angular-cli-ghpages -- --dir dist/phangular"
   },
   "private": true,
   "dependencies": {
