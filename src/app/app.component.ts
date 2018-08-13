@@ -25,7 +25,9 @@ export class AppComponent {
     width: 640,
     height: 480,
     scene: {
-      create: function () { this.cameras.main.startFollow(this.add.text(0, 0, 'Hello World!').setOrigin(0.5), false); }
+      create: function () {
+        this.cameras.main.startFollow(this.add.text(0, 0, 'Just what do you think you\'re doing, Dave?').setOrigin(0.5), false);
+      }
     }
   };
 
